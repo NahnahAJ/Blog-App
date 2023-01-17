@@ -24,7 +24,6 @@ default: &default
 development:
   <<: *default
   database: BlogApp_development
-  username: nahnahaj
 # lsof -wni tcp:3000  kill -9 43041
 
   # The specified database role being used to connect to postgres.
