@@ -1,6 +1,6 @@
 class Post < ApplicationRecord
   after_create :posts_counter_update
-  belongs_to :author, :class_name => 'User'
+  belongs_to :author, class_name: 'User'
   has_many :likes
   has_many :comments
 
@@ -11,6 +11,6 @@ class Post < ApplicationRecord
   end
 
   def recent_comments
-  Post.where(comments: self).order(created_at: :desc).limit(5)
+    Post.where(comments: self).order(created_at: :desc).limit(5)
   end
 end
