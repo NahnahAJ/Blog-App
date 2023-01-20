@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  #tests go here
+  # tests go here
   describe 'validations' do
     it 'is invalid without a name' do
       user = User.new(name: nil)
@@ -34,15 +34,14 @@ RSpec.describe User, type: :model do
   end
 
   describe '#recent_posts' do
-  let(:user) { User.create(name: 'John Doe') }
-  let!(:post1) { Post.create(title: 'Post 1', author: user, created_at: 4.days.ago) }
-  let!(:post2) { Post.create(title: 'Post 2', author: user, created_at: 3.days.ago) }
-  let!(:post3) { Post.create(title: 'Post 3', author: user, created_at: 2.days.ago) }
-  let!(:post4) { Post.create(title: 'Post 4', author: user, created_at: 1.day.ago) }
+    let(:user) { User.create(name: 'John Doe') }
+    let!(:post1) { Post.create(title: 'Post 1', author: user, created_at: 4.days.ago) }
+    let!(:post2) { Post.create(title: 'Post 2', author: user, created_at: 3.days.ago) }
+    let!(:post3) { Post.create(title: 'Post 3', author: user, created_at: 2.days.ago) }
+    let!(:post4) { Post.create(title: 'Post 4', author: user, created_at: 1.day.ago) }
 
-  it 'returns the 3 most recent posts for a given user' do
-    expect(user.recent_posts).to eq([post4, post3, post2])
+    it 'returns the 3 most recent posts for a given user' do
+      expect(user.recent_posts).to eq([post4, post3, post2])
+    end
   end
-end
-
 end

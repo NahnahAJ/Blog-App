@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Comment, type: :model do
-  #tests go here
+  # tests go here
 
   describe 'associations' do
     it 'belongs to author' do
@@ -18,10 +18,10 @@ RSpec.describe Comment, type: :model do
   describe 'update_comment_counter' do
     let(:user) { User.create(name: 'John Doe') }
     let(:post) { Post.create(title: 'Post 1', author: user) }
-    let(:comment) { Comment.create(author: user, post: post) }
+    let(:comment) { Comment.create(author: user, post:) }
 
     it 'increments the comments counter on the associated post' do
-      expect{ comment.update_comment_counter }.to change{ post.reload.comments_counter }.by(2)
+      expect { comment.update_comment_counter }.to change { post.reload.comments_counter }.by(2)
     end
   end
 end
