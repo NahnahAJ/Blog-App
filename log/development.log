@@ -984,3 +984,321 @@ FOREIGN KEY ("post_id")
   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6045777927375424770)[0m
   [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2023-01-23 11:36:45 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (3.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/nahnah/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/nahnah/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.8ms | Allocations: 477)
+Completed 200 OK in 14ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 3296)
+
+
+Started GET "/" for 127.0.0.1 at 2023-01-23 11:36:52 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/nahnah/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/nahnah/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.9ms | Allocations: 281)
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 972)
+
+
+Started GET "/" for 127.0.0.1 at 2023-01-23 11:42:45 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/nahnah/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/nahnah/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.5ms | Allocations: 477)
+Completed 200 OK in 10ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 3311)
+
+
+Started GET "/" for 127.0.0.1 at 2023-01-23 11:44:21 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/nahnah/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/nahnah/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.2ms | Allocations: 281)
+Completed 200 OK in 6ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 973)
+
+
+Started GET "/" for 127.0.0.1 at 2023-01-23 11:44:54 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/nahnah/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/nahnah/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.2ms | Allocations: 477)
+Completed 200 OK in 12ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 3311)
+
+
+Started GET "/rails/info/routes" for ::1 at 2023-01-23 12:02:44 +0000
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /home/nahnah/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/layouts/application.html.erb
+  Rendering /home/nahnah/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/nahnah/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (Duration: 31.3ms | Allocations: 5398)
+  Rendered /home/nahnah/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 4.8ms | Allocations: 1262)
+  Rendered /home/nahnah/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 41.3ms | Allocations: 10619)
+  Rendered layout /home/nahnah/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/layouts/application.html.erb (Duration: 44.6ms | Allocations: 10915)
+Completed 200 OK in 48ms (Views: 46.6ms | Allocations: 11957)
+
+
+Started GET "/rails/info" for ::1 at 2023-01-23 12:04:03 +0000
+Processing by Rails::InfoController#index as HTML
+Redirected to http://localhost:3000/rails/info/routes
+Completed 302 Found in 2ms (Allocations: 766)
+
+
+Started GET "/rails/info/routes" for ::1 at 2023-01-23 12:04:03 +0000
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /home/nahnah/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/layouts/application.html.erb
+  Rendering /home/nahnah/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/nahnah/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb [32 times] (Duration: 15.2ms | Allocations: 5245)
+  Rendered /home/nahnah/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/actionpack-7.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 1.5ms | Allocations: 838)
+  Rendered /home/nahnah/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 25.4ms | Allocations: 9910)
+  Rendered layout /home/nahnah/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/layouts/application.html.erb (Duration: 26.3ms | Allocations: 10170)
+Completed 200 OK in 30ms (Views: 27.9ms | Allocations: 10996)
+
+
+Started GET "/rails/" for ::1 at 2023-01-23 12:04:15 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/rails"):
+  
+Started GET "/" for ::1 at 2023-01-23 12:05:02 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/nahnah/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/nahnah/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.9ms | Allocations: 280)
+Completed 200 OK in 4ms (Views: 1.8ms | Allocations: 801)
+
+
+Started GET "/rails" for ::1 at 2023-01-23 12:05:14 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/rails"):
+  
+Started GET "/rails/info/routes?path=i" for ::1 at 2023-01-23 12:07:10 +0000
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"i"}
+Completed 200 OK in 3ms (Views: 0.5ms | Allocations: 2444)
+
+
+Started GET "/rails/info/routes?path=in" for ::1 at 2023-01-23 12:07:11 +0000
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"in"}
+Completed 200 OK in 2ms (Views: 0.3ms | Allocations: 1090)
+
+
+Started GET "/rails/info/routes?path=inde" for ::1 at 2023-01-23 12:07:14 +0000
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"inde"}
+Completed 200 OK in 1ms (Views: 0.1ms | Allocations: 654)
+
+
+Started GET "/rails/info/routes?path=index" for ::1 at 2023-01-23 12:07:18 +0000
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"index"}
+Completed 200 OK in 1ms (Views: 0.2ms | Allocations: 653)
+
+
+Started GET "/rails/info/routes?path=index." for ::1 at 2023-01-23 12:07:20 +0000
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"index."}
+Completed 200 OK in 2ms (Views: 0.2ms | Allocations: 654)
+
+
+Started GET "/rails/info/routes?path=index.ht" for ::1 at 2023-01-23 12:07:21 +0000
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"index.ht"}
+Completed 200 OK in 2ms (Views: 0.2ms | Allocations: 654)
+
+
+Started GET "/" for 127.0.0.1 at 2023-01-23 12:16:45 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/nahnah/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/nahnah/.rbenv/versions/3.1.3/lib/ruby/gems/3.1.0/gems/railties-7.0.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.2ms | Allocations: 477)
+Completed 200 OK in 11ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 3311)
+
+
+Started GET "/rails" for 127.0.0.1 at 2023-01-23 12:16:53 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/rails"):
+  
+Started GET "/rails" for ::1 at 2023-01-23 12:20:57 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/rails"):
+  
+Started GET "/rails" for 127.0.0.1 at 2023-01-23 12:31:04 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/rails"):
+  
+Started GET "/users" for 127.0.0.1 at 2023-01-23 14:31:25 +0000
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 408.5ms | Allocations: 90779)
+Completed 200 OK in 426ms (Views: 409.8ms | Allocations: 94257)
+
+
+Started GET "/posts" for 127.0.0.1 at 2023-01-23 14:32:32 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/posts"):
+  
+Started GET "/users" for 127.0.0.1 at 2023-01-23 14:32:43 +0000
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 2530)
+Completed 200 OK in 8ms (Views: 6.8ms | Allocations: 2820)
+
+
+Started GET "/users/id" for 127.0.0.1 at 2023-01-23 14:37:05 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"id"}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+Completed 404 Not Found in 57ms (ActiveRecord: 23.5ms | Allocations: 9318)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=id):
+  
+app/controllers/users_controller.rb:3:in `show'
+Started GET "/users/:id" for 127.0.0.1 at 2023-01-23 14:37:20 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>":id"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+Completed 404 Not Found in 5ms (ActiveRecord: 0.3ms | Allocations: 963)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=:id):
+  
+app/controllers/users_controller.rb:3:in `show'
+Started GET "/users/:id" for 127.0.0.1 at 2023-01-23 14:37:24 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>":id"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms | Allocations: 943)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=:id):
+  
+app/controllers/users_controller.rb:3:in `show'
+Started GET "/users/user_id" for 127.0.0.1 at 2023-01-23 14:37:33 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"user_id"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms | Allocations: 948)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=user_id):
+  
+app/controllers/users_controller.rb:3:in `show'
+Started GET "/users/id" for 127.0.0.1 at 2023-01-23 14:37:48 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"id"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms | Allocations: 936)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=id):
+  
+app/controllers/users_controller.rb:3:in `show'
+Started GET "/users/1" for 127.0.0.1 at 2023-01-23 14:38:02 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `show'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.5ms | Allocations: 943)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:3:in `show'
+Started GET "/users/1" for 127.0.0.1 at 2023-01-23 14:39:28 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 110)
+  Rendered layout layouts/application.html.erb (Duration: 29.2ms | Allocations: 15366)
+Completed 200 OK in 35ms (Views: 30.8ms | ActiveRecord: 0.0ms | Allocations: 17944)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2023-01-23 14:39:36 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2519)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 2809)
+
+
+Started GET "/users" for 127.0.0.1 at 2023-01-23 14:39:40 +0000
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 79)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2610)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 2932)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2023-01-23 14:39:46 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 2522)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 2790)
+
+
+Started GET "/users" for 127.0.0.1 at 2023-01-23 14:41:26 +0000
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 15015)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 15632)
+
+
+Started GET "/users" for 127.0.0.1 at 2023-01-23 14:41:26 +0000
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 2518)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 2792)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2023-01-23 14:41:31 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 2520)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 2777)
+
+
+Started GET "/users/1/posts" for 127.0.0.1 at 2023-01-23 14:48:54 +0000
+Processing by PostsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 112)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 15371)
+Completed 200 OK in 27ms (Views: 17.6ms | Allocations: 18322)
+
+
+Started GET "/users/1/posts/1" for 127.0.0.1 at 2023-01-23 14:49:05 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"user_id"=>"1", "id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 81)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 2595)
+Completed 200 OK in 5ms (Views: 4.4ms | Allocations: 2935)
+
+
