@@ -1,1 +1,51 @@
-<h1>"Hello world from POSTS index.html.erb"</h1>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+
+  <body>
+
+  <div class="card   d-flex justify-content-center" style="width: 28rem;">
+ <div><% @users.each do |user| %></div>
+  <div>
+    <img src="<%= user.photo %>" class="card-img-top" alt="">
+    <div class="card-body">
+      <h5 class="card-title"><%= user.name %></h5>
+      <p class="card-text"><%= user.bio %></p>
+      <p class="card-text">Number of posts: <%= user.posts_counter %></p>
+    </div>
+  </div>
+  <% end %>
+
+  <h1>Posts</h1>
+  <div class="posts card-body">
+    <% @posts.each do |post| %>
+      <div class="post">
+        <h3><%= post.title %></h3>
+        <p><%= post.text %></p>
+        <p>Comments: <%= post.comments_counter %></p>
+        <p>Likes: <%= post.likes_counter %></p>
+        <button class="btn btn-dark"><%= link_to "See Post", user_post_path(post.author_id, post.id) %></button>
+
+        <div class="comments">
+        <% if post.comments_counter == 0 %> 
+          <p>There are no comments for this post.</p>
+        <% else %>
+          <% post.comments.each do |comment| %>
+            <% poster = comment.author_id%>
+            <% poster = User.find(poster) %>
+            <p><%= poster.name %>: <%= comment.text %></p>
+          <% end %>
+        <% end %>
+        </div>
+      </div>
+    <% end %>  
+  </div>
+  </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
