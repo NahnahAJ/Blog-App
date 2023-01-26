@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   def show
-    #Find the user id ad author id 
-    @user = User.find(params[:id] )
+    # Find the user id ad author id
+    @user = User.find(params[:id])
     @posts = Post.where(author_id: params[:id])
   end
 
