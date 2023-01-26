@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   def index
     @posts = Post.all
-    @users = User.all
+    @user = User.where(id: params[:user_id]).first
     @comments = Comment.all
   end
 
