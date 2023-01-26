@@ -37,10 +37,10 @@
           <% if post.comments_counter == 0 %> 
             <span>There are no comments for this post.</span>
           <% else %>
-            <% post.comments.each do |comment| %>
+              <% post.recent_comments.each do |comment| %>
               <% poster = comment.author_id%>
               <% poster = User.find(poster) %>
-              <span><%= poster.name %>: <%= comment.text %></span>
+              <p><%= poster.name %>: <%= comment.text %></p>
             <% end %>
           <% end %>
           </div>
