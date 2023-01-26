@@ -8,42 +8,48 @@
 
   <body>
 
-  <div class="card   d-flex justify-content-center" style="width: 28rem;">
- <div><% @users.each do |user| %></div>
-  <div>
-    <img src="<%= user.photo %>" class="card-img-top" alt="">
-    <div class="card-body">
-      <h5 class="card-title"><%= user.name %></h5>
-      <p class="card-text"><%= user.bio %></p>
-      <p class="card-text">Number of posts: <%= user.posts_counter %></p>
+ <% @users.each do |user| %>
+  <div class="row justify-content-md-center">
+  <div class="col col-lg-2">
+    <%= image_tag user.photo, size: "100x100" %>
+  </div>
+
+    <div class="col col-lg-4 border d-flex align-items-center gap-5">
+      <h1><%= user.name %></h1>
+      <p>Number of posts: <%= user.posts_counter %></p>
     </div>
+
   </div>
   <% end %>
 
-  <h1>Posts</h1>
-  <div class="posts card-body">
+  <div class="container text-center">
     <% @posts.each do |post| %>
-      <div class="post">
-        <h3><%= post.title %></h3>
-        <p><%= post.text %></p>
-        <p>Comments: <%= post.comments_counter %></p>
-        <p>Likes: <%= post.likes_counter %></p>
-        <button class="btn btn-dark"><%= link_to "See Post", user_post_path(post.author_id, post.id) %></button>
-
-        <div class="comments">
-        <% if post.comments_counter == 0 %> 
-          <p>There are no comments for this post.</p>
-        <% else %>
-          <% post.comments.each do |comment| %>
-            <% poster = comment.author_id%>
-            <% poster = User.find(poster) %>
-            <p><%= poster.name %>: <%= comment.text %></p>
+      <div class="container text-start border mb-3 mt-3 ">
+            <h3><%= post.title %></h3>
+            <p><%= post.text %></p>
+            <div class="d-flex justify-content-md-end gap-2">
+            <p>Comments: <%= post.comments_counter %></p>
+            <p>Likes: <%= post.likes_counter %></p>
+            </div>
+          </div>
+          <div class="container text-start border mb-3">
+          <div class="comments">
+          <% if post.comments_counter == 0 %> 
+            <span>There are no comments for this post.</span>
+          <% else %>
+            <% post.comments.each do |comment| %>
+              <% poster = comment.author_id%>
+              <% poster = User.find(poster) %>
+              <span><%= poster.name %>: <%= comment.text %></span>
+            <% end %>
           <% end %>
-        <% end %>
+          </div>
+        <button class="btn btn-dark"><%= link_to "See Post", user_post_path(post.author_id, post.id) %></button>
         </div>
+
+ 
       </div>
     <% end %>  
-  </div>
   </div>
   </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
