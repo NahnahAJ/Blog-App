@@ -5,8 +5,12 @@ Rails.application.routes.draw do
    root "users#index"
   # root "articles#index"
 
-  # Defines the route for the users path
+  # Defines the route for the users path and posts path
   resources :users, only: [:index, :show] do
-    resources :posts, only: [:index, :show]
+    resources :posts, only: [:index, :show, :new, :create] do
+      resources :comments, only: [:new, :create] 
+        resources :likes, only: [:new] 
   end
 end
+end
+

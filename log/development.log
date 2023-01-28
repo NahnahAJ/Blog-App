@@ -14299,3 +14299,7 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 36ms (Views: 29.8ms | ActiveRecord: 3.2ms | Allocations: 7598)
 
 
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mPost Load (2.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mPost Load (12.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  [1m[36mPost Load (17.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
