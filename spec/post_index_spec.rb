@@ -53,7 +53,7 @@ RSpec.describe 'Posts Index Page', type: :system do
 
     it 'When I click on a post, it redirects me to that post\'s show page.' do
       find(:link, 'See Post', match: :first).click
-      expect(page).to have_content('Post 1')
+      expect(page).to have_content('This is post 2')
     end
   end
 end
