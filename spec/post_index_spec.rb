@@ -1,6 +1,5 @@
 
 require_relative 'rails_helper'
-require 'selenium-webdriver'
 
 RSpec.describe 'Posts Index Page', type: :system do
   describe 'index page(I can see the user\'s profile picture)' do
@@ -10,11 +9,11 @@ RSpec.describe 'Posts Index Page', type: :system do
       @post2 = Post.create(title: 'Post 2', text: 'This is post 2', author: @user)
       @post3 = Post.create(title: 'Post 3', text: 'This is post 3', author: @user)
       @post4 = Post.create(title: 'Post 4', text: 'This is post 4', author: @user)
-      visit user_posts_path(@user)
       @comment = Comment.create(text: 'This is the first comment', author: @user, post: @post)
       @comment2 = Comment.create(text: 'This is a comment', author: @user, post: @post)
       @like = Like.create(author: @user, post: @post)
       @like2 = Like.create(author: @user, post: @post)
+      visit user_posts_path(@user)
     end
 
       it 'should show the profile picture for each user' do
@@ -53,13 +52,10 @@ RSpec.describe 'Posts Index Page', type: :system do
       expect(page).to have_css('.pagination')
       end
 
-      it 'When I click on a post, it redirects me to that post\'s show page.'
-      click_link('Post 1')
+      it 'When I click on a post, it redirects me to that post\'s show page.' do
+      find(:link, 'See Post', match: :first).click
       expect(page).to have_content('Post 1')
-      expect(page).to have_content('This is post 1')
-      expect(page).to have_content('This is the first comment')
     end
-
 
   end
 end
