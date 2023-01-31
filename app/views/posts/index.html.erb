@@ -34,11 +34,7 @@
             <span>There are no comments for this post.</span>
           <% else %>
               <% post.recent_comments.each do |comment| %>
-              <% poster = comment.author_id%>
-              <% poster = User.find(poster) %>
-              <p><%= poster.name %>: <%= comment.text %></p>
-
-              
+              <p><%= comment.author.name %>: <%= comment.text %></p>
               <% end %>
               <% end %>
               </div>
