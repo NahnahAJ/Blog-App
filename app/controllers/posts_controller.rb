@@ -8,7 +8,7 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
-    @comments = Comment.includes(:author).where(id: params[:user_id]).order(created_at: :desc )
+    @comments = Comment.includes(:author).where(id: params[:user_id]).order(created_at: :desc)
   end
 
   def new
