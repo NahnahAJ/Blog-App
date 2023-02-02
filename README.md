@@ -127,7 +127,7 @@ N/A
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
 
 👤 **Nahnah Ahjuwah**
 
@@ -135,7 +135,10 @@ N/A
 - Twitter: [@NahnahAhjuwah](https://https://twitter.com/NahnahAhjuwah)
 - LinkedIn: [Felicia-Awuah](https://www.linkedin.com/in/felicia-awuah-gyedua/)
 
-
+👤 **Is-haq, Adnan Olamilekan**
+- GitHub: [@AdnanOlarmmi](https://github.com/adnanolarmmi)
+- Twitter: [@AdnanIshaqOla](https://twitter.com/AdnanIshaqOla)
+- LinkedIn: [Adnan (Olamilekan) Is-haq](https://linkedin.com/in/adnan-is-haq-olamilekan)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

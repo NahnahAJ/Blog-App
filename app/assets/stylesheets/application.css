@@ -13,3 +13,34 @@
  *= require_tree .
  *= require_self
  */
+
+.field {
+  padding: 5px;
+}
+
+input#user_email,
+input#user_password,
+input#user_password_confirmation,
+input#user_name,
+input#user_bio,
+input#user_photo {
+  width: 100%;
+}
+
+input#user_password_confirmation {
+  margin-bottom: 1rem;
+}
+
+/* Input with type submit */
+input[type="submit"] {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
