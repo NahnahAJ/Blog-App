@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class Ability
   include CanCan::Ability
 
@@ -11,12 +9,12 @@ class Ability
 
     #   return unless user.admin?
     # check if the user owns the post
-    
-      can :manage, :all if user.add_role == 'admin'
-      can :destroy, Post, author: user
-      can :destroy, Comment, author: user
-      # return unless user.admin?
-      # can :destroy, :post
+
+    can :manage, :all if user.add_role == 'admin'
+    can :destroy, Post, author: user
+    can :destroy, Comment, author: user
+    # return unless user.admin?
+    # can :destroy, :post
     #
     # The first argument to `can` is the action you are giving the user
     # permission to do.

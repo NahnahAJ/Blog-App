@@ -20,8 +20,8 @@ class User < ApplicationRecord
 
   # A method that adds the role for a given user
   def add_role
-    if Post.where(author_id: id)
-      update(role: 'admin')
+    return unless Post.where(author_id: id)
+
+    update(role: 'admin')
   end
-end
 end

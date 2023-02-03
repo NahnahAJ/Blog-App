@@ -26,17 +26,15 @@ class PostsController < ApplicationController
 
   def destroy
     @post = Post.find(params[:id])
-    if @post.comments_counter > 0 || @post.likes_counter > 0
+    if @post.comments_counter.positive? || @post.likes_counter.positive?
       @post.comments.destroy_all
       @post.likes.destroy_all
-      @post.destroy
       # reduce the posts counter for the user by 1
-      User.decrement_counter(:posts_counter, @post.author_id)
-      else
-    @post.destroy
-    # reduce the posts counter for the user by 1
-    User.decrement_counter(:posts_counter, @post.author_id)
+    else
+      # reduce the posts counter for the user by 1
     end
+    @post.destroy
+    User.decrement_counter(:posts_counter, @post.author_id)
     redirect_to user_posts_path
   end
 end
