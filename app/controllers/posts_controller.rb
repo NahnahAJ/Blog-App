@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-before_action :load_and_authorize_resource, only: [:destroy]
+  before_action :load_and_authorize_resource, only: [:destroy]
   def index
     @posts = Post.includes(:comments).where(author_id: params[:user_id])
     @user = User.where(id: params[:user_id]).first
@@ -36,9 +36,9 @@ before_action :load_and_authorize_resource, only: [:destroy]
     redirect_to user_posts_path
   end
 
-
   private
-  #Define the load_and_authorize_resource method
+
+  # Define the load_and_authorize_resource method
   def load_and_authorize_resource
     @post = Post.find(params[:id])
     authorize! @post, :destroy? if @post.author_id != current_user.id
