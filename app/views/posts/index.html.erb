@@ -35,6 +35,11 @@
           <% else %>
               <% post.recent_comments.each do |comment| %>
               <p><%= comment.author.name %>: <%= comment.text %></p>
+              <% if can? :destroy, comment %>
+              <%= button_to "Delete Comment", user_post_comment_path(
+                comment.post.author_id, comment.post.id, comment.id
+              ), method: :delete %>
+              <% end %>
               <% end %>
               <% end %>
               </div>
