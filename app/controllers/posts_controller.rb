@@ -29,9 +29,6 @@ class PostsController < ApplicationController
     if @post.comments_counter.positive? || @post.likes_counter.positive?
       @post.comments.destroy_all
       @post.likes.destroy_all
-      # reduce the posts counter for the user by 1
-    else
-      # reduce the posts counter for the user by 1
     end
     @post.destroy
     User.decrement_counter(:posts_counter, @post.author_id)
