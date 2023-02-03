@@ -35,11 +35,19 @@
           <% else %>
               <% post.recent_comments.each do |comment| %>
               <p><%= comment.author.name %>: <%= comment.text %></p>
+              <% if can? :destroy, comment %>
+              <%= button_to "Delete Comment", user_post_comment_path(
+                comment.post.author_id, comment.post.id, comment.id
+              ), method: :delete %>
+              <% end %>
               <% end %>
               <% end %>
               </div>
               <button class="btn btn-dark"><%= link_to "See Post", user_post_path(post.author_id, post.id) %></button>
               <button class="btn btn-dark"><%= link_to "Like", new_user_post_like_path(post.author_id, post.id) %></button>
+              <% if can? :destroy, post %>
+              <%= button_to "Delete Post", user_post_path(post.author_id, post.id), method: :delete %>
+              <% end %>
               </div>
               
               </div>
