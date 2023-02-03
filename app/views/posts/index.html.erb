@@ -45,6 +45,9 @@
               </div>
               <button class="btn btn-dark"><%= link_to "See Post", user_post_path(post.author_id, post.id) %></button>
               <button class="btn btn-dark"><%= link_to "Like", new_user_post_like_path(post.author_id, post.id) %></button>
+              <% if can? :destroy, post %>
+              <%= button_to "Delete Post", user_post_path(post.author_id, post.id), method: :delete %>
+              <% end %>
               </div>
               
               </div>
