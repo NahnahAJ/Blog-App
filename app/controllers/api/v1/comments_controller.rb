@@ -1,5 +1,4 @@
 class Api::V1::CommentsController < ApplicationController
-
   def index
     @comments = Comment.where(post_id: params[:post_id])
     render json: @comments
@@ -21,6 +20,7 @@ class Api::V1::CommentsController < ApplicationController
   end
 
   private
+
   def comment_params
     params.require(:comment).permit(:author_id, :post_id, :text)
   end
